@@ -1,0 +1,20 @@
+uuid: 6f1ef9ec-09bd-49e7-8a0e-9523e7ae1bc6
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: g9d1dz8nBbpg6N8PHFvBLFLYZJoerS7jhMfVZZveJQk
+id: comment.field_ssf_rating
+field_name: field_ssf_rating
+entity_type: comment
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

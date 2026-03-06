@@ -1,0 +1,12 @@
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: favicon.ico
+  use_default: false
+features:
+  comment_user_picture: false
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: false
+logo:
+  path: 'public://logo.svg'
+  use_default: false

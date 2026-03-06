@@ -1,0 +1,30 @@
+uuid: 14a0ef23-f451-4926-9203-3f3e130b55d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - book
+    - comment
+    - contact
+    - filter
+    - media
+    - pwa
+    - search
+    - system
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access book list'
+  - 'access comments'
+  - 'access content'
+  - 'access pwa'
+  - 'access site-wide contact form'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'view media'

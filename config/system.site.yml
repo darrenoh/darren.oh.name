@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+langcode: en
+uuid: e3561ac1-ee55-45b1-884e-78415a17adb7
+name: 'Darren Oh'
+mail: darren@oh.name
+slogan: 'What I’m Learning'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: null

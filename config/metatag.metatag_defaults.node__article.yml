@@ -1,0 +1,8 @@
+uuid: bd5903cc-1969-4185-91a0-dbd223ecc5ba
+langcode: en
+status: true
+dependencies: {  }
+id: node__article
+label: 'Content: Article'
+tags:
+  image_src: '[node:field_image:entity:url], [node:field_media:entity:thumbnail]'

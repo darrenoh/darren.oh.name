@@ -1,0 +1,35 @@
+uuid: 54c7ef04-b3a2-4cd1-9a33-51b04cfff4f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+    - field.field.comment.comment.comment_body
+    - field.field.comment.comment.field_ssf_ham
+    - field.field.comment.comment.field_ssf_rating
+    - field.field.comment.comment.field_ssf_spam
+  module:
+    - text
+_core:
+  default_config_hash: 1yBeJcGufCbnbSolmaYgTIXZWYUaO7kw6xszGA8TYs8
+id: comment.comment.default
+targetEntityType: comment
+bundle: comment
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_ssf_ham: true
+  field_ssf_rating: true
+  field_ssf_spam: true
