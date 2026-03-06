@@ -1,0 +1,27 @@
+uuid: 1286bb1f-e580-499e-899c-8bf13a423eff
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+    - field.storage.comment.field_ssf_rating
+_core:
+  default_config_hash: 4lpK1l_3TVXU1bd2hIe3fMl_Y_T_8XMEZU3sZlHUGoM
+id: comment.comment.field_ssf_rating
+field_name: field_ssf_rating
+entity_type: comment
+bundle: comment
+label: 'SSF Rating'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0.0
+default_value_callback: ''
+settings:
+  min: 0.0
+  max: 1.0
+  prefix: ''
+  suffix: ''
+field_type: float

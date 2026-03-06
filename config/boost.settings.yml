@@ -1,0 +1,9 @@
+cron_purge_maximum_age: 1
+cacheability_pages:
+  id: request_path
+  pages: ''
+  negate: '1'
+exec: 0
+path_entity_set:
+  '': {  }
+xmlsitemap_crawl: {  }

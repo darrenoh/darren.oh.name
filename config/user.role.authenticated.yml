@@ -1,0 +1,37 @@
+uuid: 4ccf0db7-897a-4e0a-ac00-d80b4d530086
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - book
+    - comment
+    - contact
+    - file
+    - filter
+    - media
+    - pwa
+    - search
+    - shortcut
+    - system
+    - tfa
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access book list'
+  - 'access comments'
+  - 'access content'
+  - 'access pwa'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'delete own files'
+  - 'post comments'
+  - 'search content'
+  - 'setup own tfa'
+  - 'use text format basic_html'
+  - 'view media'

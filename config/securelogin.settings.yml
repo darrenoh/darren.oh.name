@@ -1,0 +1,12 @@
+_core:
+  default_config_hash: dnQK_fXC0n9MPQm65de4VfTTE1I5QMcept0WlMmJxmU
+base_url: null
+secure_forms: true
+all_forms: false
+forms:
+  - user_login_form
+  - user_form
+  - user_register_form
+  - user_pass_reset
+  - user_pass
+other_forms: {  }
