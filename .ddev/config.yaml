@@ -1,0 +1,19 @@
+type: drupal11
+docroot: web
+php_version: "8.4"
+webserver_type: apache-fpm
+xdebug_enabled: false
+additional_hostnames: []
+additional_fqdns: []
+database:
+    type: mysql
+    version: "8.0"
+use_dns_when_possible: true
+composer_version: "2"
+web_environment: []
+corepack_enable: true
+# Ensure Drupal private storage exists on each container start.
+# The app resolves file_private_path to /var/www/private/darren.oh.name.
+hooks:
+    post-start:
+        - exec: mkdir -p /var/www/private/darren.oh.name && chmod 0770 /var/www/private/darren.oh.name
