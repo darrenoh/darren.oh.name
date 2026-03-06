@@ -1,0 +1,28 @@
+diff --git a/.htaccess b/.htaccess
+index 1ac01a117b2..57de4fcb06f 100644
+--- a/.htaccess
++++ b/.htaccess
+@@ -122,6 +122,23 @@ AddType image/webp .webp
+   RewriteCond %{REQUEST_URI} !core
+   RewriteRule ^ %1/core/%2 [L,QSA,R=301]
+ 
++  # ---- BEGIN BOOST ----
++
++  RewriteCond %{REQUEST_METHOD} ^(GET|HEAD)$ [NC]
++  RewriteCond %{QUERY_STRING} ^$
++  RewriteCond %{HTTP_COOKIE} !(SESS|SSESS) [NC]
++  RewriteCond %{DOCUMENT_ROOT}/sites/default/files/boost%{REQUEST_URI}.html -f
++  RewriteRule ^ sites/default/files/boost%{REQUEST_URI}.html [L,E=BOOST_CACHE:1]
++  #  # IMPORTANT: allow Basic Auth testing (do NOT bypass on Authorization)
++  #  # So: do NOT add any Authorization-based skip.
++
++  <IfModule mod_headers.c>
++    Header set X-Boost-Cache "full" env=BOOST_CACHE
++    Header set X-Boost-Cache "full" env=REDIRECT_BOOST_CACHE
++  </IfModule>
++
++  # ---- END BOOST ----
++
+   # Rewrite install.php during installation to see if mod_rewrite is working
+   RewriteRule ^core/install\.php core/install.php?rewrite=ok [QSA,L]
+ 
