@@ -1,0 +1,13 @@
+uuid: adc72002-46c4-4ab7-8795-8c83981f7a3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - key.key.encrypt_key
+  module:
+    - real_aes
+id: encrypt
+label: encrypt
+encryption_method: real_aes
+encryption_method_configuration: {  }
+encryption_key: encrypt_key

@@ -1,0 +1,23 @@
+uuid: d54cdbc8-8e5e-4269-9c74-168650183b24
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:51b50b40-b725-4d6f-bbb9-bc4688c8b4dd'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: profilephoto
+theme: bartik
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'block_content:51b50b40-b725-4d6f-bbb9-bc4688c8b4dd'
+settings:
+  id: 'block_content:51b50b40-b725-4d6f-bbb9-bc4688c8b4dd'
+  label: 'Profile photo'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

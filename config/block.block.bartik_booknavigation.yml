@@ -1,0 +1,33 @@
+uuid: c5d8a41d-109a-46ff-8cb5-04700bfc9eb2
+langcode: en
+status: true
+dependencies:
+  module:
+    - book
+    - node
+  theme:
+    - bartik
+id: bartik_booknavigation
+theme: bartik
+region: content
+weight: -6
+provider: null
+plugin: book_navigation
+settings:
+  id: book_navigation
+  label: Contents
+  label_display: visible
+  provider: book
+  block_mode: 'book pages'
+  show_top_item: false
+  use_top_level_title: false
+  starting_level: 1
+  expanded: false
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article
